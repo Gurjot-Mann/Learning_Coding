@@ -1,0 +1,8 @@
+type        worst       best
+===================================
+bubble      n^2          n
+insertion   n^2          n
+selection   n^2         n^2
+quick       n^2         n*log(n)
+merge       n*log(n)    n*log(n)
+count       n+r         O(n+k)

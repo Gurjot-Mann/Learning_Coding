@@ -1,0 +1,1 @@
+{"name":"Local: CopywithRandomPointers","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\CopywithRandomPointers.cpp","tests":[{"id":1645874159028,"input":"1\n4 2\n1 2 3 4\n1 2 2 4","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\CopywithRandomPointers.cpp","group":"local","local":true}

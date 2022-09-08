@@ -1,0 +1,1 @@
+{"name":"Local: MergeTwoLinkedLists","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\MergeTwoLinkedLists.cpp","tests":[{"id":1646120723386,"input":"1\n2 2\n1 1\n2 4","output":"1 1 2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\MergeTwoLinkedLists.cpp","group":"local","local":true}

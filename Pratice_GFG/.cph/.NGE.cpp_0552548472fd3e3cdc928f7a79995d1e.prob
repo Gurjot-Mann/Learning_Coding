@@ -1,0 +1,1 @@
+{"name":"Local: NGE","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\NGE.cpp","tests":[{"id":1645785964268,"input":"1\n4\n1 3 2 4","output":"3 4 4 -1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\NGE.cpp","group":"local","local":true}

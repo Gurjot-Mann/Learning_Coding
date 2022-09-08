@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Tribute" />
+  <title>Tribute-page freeCodeCamp</title>
+  <style>
+    @media (prefers-reduced-motion: no-preference){
+  *{
+    scroll-behavior: smooth;
+   }
+}
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+ 	background-color: #1b1b32;
+  color: #dfdfe2;
+}
+main{
+  padding-top: 50px;
+}
+
+section p{
+  margin-top: -4;
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+  padding: 0 4rem;
+}
+#logo{
+  width: max(200px, 18vw);
+  aspect-ratio: 35 / 4;
+  margin: auto;
+  padding: 0.4rem;
+}
+
+header{
+	background-color: #0a0a23;
+  margin-left: -7px;
+  width: 100%;
+	height: 50px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+#jump{
+  margin-right: max(17px, 1px);
+  padding: 16px 0px;
+  background-color:#0a0a23;
+  color: #dfdfe2;
+  border: none;
+  text-align: center;
+  font-size: max(1rem);
+
+}
+#jump:hover{
+  background-color: #1b1b32;
+}
+option{
+  font-size: 15px;
+}
+
+#img-div{
+	background-color: #0a0a23;
+  padding: 10px;
+  min-width: 360px;
+  margin: auto;
+}
+img{
+   max-height: auto;
+   max-width: 900px;
+   height:auto;
+   width:100%;
+   margin: 0 auto;
+   display: block;
+ }
+ #img-caption{
+   padding: 10px 0 0 0px;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 1.0rem;
+ }
+ h1{
+   font-size: 3rem;
+   margin-bottom: 1.6rem;
+ }
+ h2{
+   margin: 25px;
+ }
+ footer{
+   background-color: #0a0a23;
+   padding:20px;
+   font-size: 1.4rem;
+ }
+a{
+  color: rgb(197, 197, 4);
+}
+
+ 
+  </style>
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" />
+
+    <select id="jump" onchange="location = this.value;">
+      <option>Jump To</option>
+      <option value="#title">Top</option>
+      <option value="#about">About</option>
+      <option value="#history">History</option>
+      <option value="#founder">About Founder</option>
+      <option value="#curriculum">Curriculum</option>
+      <option value="#nonprofitwork">Non Profit Work</option>
+    </select>
+    
+    </header>
+  <main id="main">
+    <section role="region" aria-labelledby="title">
+    <h1 id="title">freeCodeCamp</h1>
+    <p>The site where anyone can learn to program free of cost</p>
+    <figure id="img-div">
+      <img src="https://images.ctfassets.net/s5uo95nf6njh/4RdAnPC2DUjbJ0dI98cydB/624d341ed42ea0c95a965b748404dcd4/1200x630-ReadMe-Social-S2E7__1_.png" id="img" />
+      <figcaption id="img-caption">Quincy Larson is an Programmer, teacher and Founder of freeCodeCapm, a non-profit programming learning website.</figcaption>
+    </figure>
+    </section>
+
+    <section role="region" aria-labelledby="about">
+        <h2 id="about">About</h2>
+        <p>freeCodeCamp (also referred to as “Free Code Camp”) is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, online publications and local organizations that intend to make learning web development accessible to anyone. Beginning with tutorials that introduce students to HTML, CSS and JavaScript, students progress to project assignments that they complete either alone or in pairs. Upon completion of all project tasks, students are partnered with other nonprofits to build web applications, giving the students practical development experience.</p>
+        </section>
+  <section role="region" aria-labelledby="history">
+    <h2 id="history">History</h2>
+    <p>freeCodeCamp was launched in October 2014 and incorporated as Free Code Camp, Inc. The founder, Quincy Larson, is a software developer who took up programming after graduate school and created freeCodeCamp as a way to streamline a student's progress from beginner to being job-ready.
+
+In a 2015 podcast interview, he summarized his motivation for creating freeCodeCamp as follows:
+
+freeCodeCamp is my effort to correct the extremely inefficient and circuitous way I learned to code. I'm committing my career and the rest of my life towards making this process as efficient and painless as possible. All those things that made learning to code a nightmare to me are things that we are trying to fix with freeCodeCamp.
+
+The original curriculum focused on MongoDB, Express.js, AngularJS, and Node.js and was estimated to take 800 hours to complete. Many of the lessons were links to free material on other platforms, such as Codecademy, Stanford, or Code School. The course was broken up into “Waypoints” (quick, interactive tutorials), “Bonfires” (algorithm challenges), “Ziplines” (front-end projects), and “Basejumps” (full-stack projects). Completing the front-end and full-stack projects awarded the student with respective certificates.
+
+The curriculum was updated in January 2016 to rely less on outside material, remove the unconventional section names, and switch focus from AngularJS to React.js as the front-end library of choice. There were a number of additions to the coursework, including D3.js and Sass, which brought the total time estimate to 2,080 hours and two more certificates, data visualization, and back-end.</p>
+</section>
+
+<section role="region" aria-labelledby="founder">
+  <h2 id="founder">Founder: Quincy Larson</h2>
+  <p>Quincy Larson was a school director for six years before he started to learn to code so that he could create tools for making schools more efficient. His own journey into learning to code was long and winding and he recognized the need for a single-track curriculum for newbie developers. Upon analyzing data on coding boot camps in the US and realizing how inaccessible coding education was to the masses, he set out to create a fully-online inclusive free platform for peer-driven learning of coding - the result of which is freeCodeCamp.
+
+He lives in Texas with his family and spends his time working on freeCodeCamp, writing and interviewing authors for the freeCodeCamp publication, co-ordinating open source projects such as Chapter (a free MeetUp alternative), advocating for a free and open internet and playing with his two young kids.</p>
+</section>
+<section role="region" aria-labelledby="curriculum">
+  <h2 id="curriculum">Curriculum</h2>
+  <p>The self-paced curriculum involves 1,400 hours of interactive coding challenges and web development projects, plus 800 hours of contributing to open-source projects for nonprofits and is constantly expanded by more challenges and projects. This translates into about one year of full-time coding. The curriculum is divided into Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Libraries, Data Visualization, APIs and Microservices, and Information Security and Quality Assurance. Participants receive a certificate after completing each section.
+
+The curriculum emphasizes pair programming, intended to foster a culture of collaboration and shared learning, which can overcome a student's doubts about the adequacy of their skills (popularly referred to as “impostor syndrome”).
+
+The languages and technologies currently taught by freeCodeCamp include HTML5, PHP, CSS 3, JavaScript, jQuery, Bootstrap, Sass, React.js, Node.js, Python, Express.js, MongoDB, and Git.</p>
+</section>
+<section role="region" aria-labelledby="nonprofitwork">
+  <h2 id="nonprofitwork">Non Profit Work</h2>
+  <p>As students of freeCodeCamp finish all certificates of the curriculum, they get the opportunity, and are encouraged, to work with nonprofit organizations. Examples have been Indonesia-based nonprofit Kopernik and People Saving Animals.
+
+In 2016, freeCodeCamp announced their "Open Source for Good" initiative, which extends and open sources their nonprofit work to all nonprofits and organizations to use. Within ten months of launching, the initiative has created seven open-source tools. Mail for Good is one of the projects, which helps organizations send bulk email messages at a low cost, which serves as a cheaper alternative to services such as MailChimp.</p>
+</section>
+  </main>
+  <footer>
+    Click below to visit<br />
+    <a id="tribute-link" href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+  </footer>
+</body>
+
+</html>

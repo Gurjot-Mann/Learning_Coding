@@ -1,0 +1,1 @@
+{"name":"Local: two_prime","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\two_prime.cpp","tests":[{"id":1645772993012,"input":"1\n74","output":"3 71"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\two_prime.cpp","group":"local","local":true}

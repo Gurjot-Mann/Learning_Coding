@@ -1,0 +1,1 @@
+{"name":"Local: countreversal","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\countreversal.cpp","tests":[{"id":1645801083150,"input":"1\n}{{}}{{{","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\countreversal.cpp","group":"local","local":true}

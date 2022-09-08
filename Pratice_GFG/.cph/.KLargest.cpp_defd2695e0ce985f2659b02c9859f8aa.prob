@@ -1,0 +1,1 @@
+{"name":"Local: KLargest","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\KLargest.cpp","tests":[{"id":1645157289147,"input":"2\n5 2\n12 5 787 1 23\n7 3\n1 23 12 9 30 2 50","output":"787 23\n50 30 23"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\KLargest.cpp","group":"local","local":true}

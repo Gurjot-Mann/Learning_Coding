@@ -1,0 +1,1 @@
+{"name":"Local: Mergewithoutextraspace","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\Mergewithoutextraspace.cpp","tests":[{"id":1645245485231,"input":"1\n4 5\n1 3 5 7\n0 2 6 8 9","output":"0 1 2 3 5 6 7 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\Mergewithoutextraspace.cpp","group":"local","local":true}

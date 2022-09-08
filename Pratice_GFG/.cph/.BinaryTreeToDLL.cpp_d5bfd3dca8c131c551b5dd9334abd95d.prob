@@ -1,0 +1,1 @@
+{"name":"Local: BinaryTreeToDLL","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\BinaryTreeToDLL.cpp","tests":[{"id":1645883086234,"input":"1\n1 3 2","output":"3 1 2\n2 1 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\BinaryTreeToDLL.cpp","group":"local","local":true}

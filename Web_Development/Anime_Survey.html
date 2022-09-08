@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Anime Survey Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+  <style>
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: large;
+  color: white;
+  margin: 0;
+}
+  
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(10, 10, 10, 0.8) 50%,rgba(152, 152, 152, 0.7)
+    ),
+    url(https://images6.alphacoders.com/596/596848.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title, #description{
+  text-align: center;
+}
+#title{
+  padding-top:30px;
+  padding-bottom: 0px;
+  margin-bottom: 9px
+}
+#description{
+  margin-top:0px;
+  font-style: italic;
+  padding-bottom: 12px;
+}
+form {
+  width: 60vw;
+	max-width: 720px;
+	min-width: 250px;
+	margin: 0 auto;
+  padding: 1em 0 2em 0;
+  background-color: rgba(67, 64, 64, 0.57);
+  border-radius: 0.25rem;
+
+}
+fieldset{
+  border: none;  
+}
+label{
+  display: block;
+  margin:0.5rem;
+}
+
+input, textarea, select{
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid white;
+  background-color: rgba(67, 64, 64, 0.57%);
+  margin: 0.6rem auto;
+  color:rgb(250, 0, 0);
+  padding: 10px;
+  font-size: large;
+  
+}
+input:hover{
+  border-bottom: 1px solid red;
+}
+
+textarea{
+  border: 1px solid white;
+  border-radius: 0.25rem;
+}
+textarea:hover, select:hover{
+  border-color:red;
+}
+#checkbox{
+  padding-top: 17px
+}
+
+.inline{
+  width: unset;
+  margin: 5px;
+  border: 1px solid white;
+}
+select{
+  padding: 6px;
+}
+
+input[type="submit"]{
+  display: block;
+  margin: 0 auto;
+  max-width:200px;
+  min-width:100px;
+  border: 1px solid red;
+  border-radius: 0.25rem
+}
+
+input[type="submit"]:hover{
+  background-color: red;
+  color: white;
+}
+
+#textarea1{
+  padding-top: 17px;
+}
+
+input[type='checkbox'], input[type='radio']{
+  accent-color: red;
+}
+
+option{
+  background-color: rgb(216, 216, 216);
+  color: black;
+}
+
+#checkboxdiv{
+  padding:4px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+</style>
+</head>
+
+<body>
+    <h1 id="title">Anime Surevy Form</h1>
+    <p id="description">Anime is the short-hand notation for animation, famous all over the world</p>
+    <form id="survey-form">
+      <fieldset class="fs1">
+      <label id="name-label">Name
+        <input id="name" type="text" placeholder="Your name" required />
+        </label>
+      <label id="email-label">E-mail Id
+          <input id="email" type="email" placeholder="E-mail Id" required />
+          </label>
+      <label id="number-label">Age 
+            <input id="number" type="number" placeholder="Age" min="15" max="120" required />
+            </label>
+      </fieldset>
+      <fieldset>
+        <label>Where do you watch Anime?
+        <label><input type="radio" name="source" class="inline" value="CrunchyRoll">CrunchyRoll</label>
+          <label><input type="radio" name="source" class="inline" value="Funimation">Funimation</label>
+          <label><input type="radio" name="source" class="inline" value="Other">Other</label>
+          </label>
+  
+          <label id="checkbox1">Select the types of Anime you like:
+            <div id="checkboxdiv">
+          <label><input type="checkbox" value="Shonen" class="inline">Shonen</label>
+          <label><input type="checkbox" value="Shoujo" class="inline">Shoujo</label>
+          <label><input type="checkbox" value="Slice-of-Life" class="inline">Slice of Life</label>
+          <label><input type="checkbox" value="Sci-Fi" class="inline">Sci-Fi</label>
+          <label><input type="checkbox" value="Adventure" class="inline">Adventure</label>
+          <label><input type="checkbox" value="Horror" class="inline">Horror</label>
+          <label><input type="checkbox" value="Psychological" class="inline">Psychological</label>
+          <label><input type="checkbox" value="Sports" class="inline">Sports</label>
+          <label><input type="checkbox" value="Comedy" class="inline">Comedy</label>
+          <label><input type="checkbox" value="Action" class="inline">Action</label>
+          <label><input type="checkbox" value="Romance" class="inline">Romance</label>
+          </label>
+          </div>
+        </fieldset>
+      <fieldset>
+        <label>Select Anime that you like the Most: 
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option>Shingeki no Kyojin</option>
+          <option>Naruto</option>
+          <option>Dragon Ball</option>
+          <option>Sailor Moon</option>
+          <option>Clannad</option>
+          <option>Cowboy Bepop</option>
+          <option>One Piece</option>
+          <option>Tokyo Ghoul</option>
+          <option>Death Note</option>
+          <option>Haikyuu!!</option>
+          <option>Assasination Classroom</option>
+          <option>Fruits Basket</option>
+          </select>
+          </label>
+  
+          <label id="textarea1">Why do you like the Anime: 
+          <textarea id="textarea" rows=3 cols=24 placeholder="Write here.."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit">
+    </form>
+  </body>
+  
+  </html>

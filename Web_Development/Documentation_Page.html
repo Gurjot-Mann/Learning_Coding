@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Documentation CSS</title>
+
+  <style>
+    *{
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 815px){
+  #navbar{
+    position: absolute !important;
+    top:0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    max-height: 275px;
+    width: 100%;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid rgb(3, 3, 119);
+  }
+  nav ul{
+    height: 180px;
+    border-top: 1px solid white;
+    overflow-y: auto !important;
+    
+  }
+  hr{
+    border:none;
+  }
+
+  main{
+    position: relative;
+    margin-left: 0px !important;
+    margin-top: 270px;
+    display: block;
+  }
+}
+
+html{
+  color: #4d4e53;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient( rgb(35, 105, 255), rgb(10, 79, 230));
+  z-index: 1;
+  min-width: 290px;
+}
+main{
+  position: absolute;
+  margin-left: 395px;
+  margin-bottom: 100px;
+}
+header{
+  color: black;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 10px;
+}
+.nav-link{
+  text-decoration: none;
+  display: block;
+  color: rgb(245, 243, 243);
+}
+
+#navbar ul{
+  display: block;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable both-edges;
+}
+#navbar ul a{
+  padding: 12px 20px 10px 30px;
+}
+#navbar ul li:hover{
+  border-bottom: 2px solid white;
+  font-size: 1.5rem;
+}
+#navbar ul li:active{
+  list-style-type: disc;
+  background-color: white;
+}
+#navbar ul li a:active{
+  color: rgb(35, 105, 255);
+}
+
+#navbar header{
+  display: block;
+  padding-left: 30px;
+  padding-top: 20px;
+  color: white;
+
+}
+article{
+  font-size: 0.97rem;
+}
+ main li{
+   padding: 0.60rem;
+ }
+ code{
+   display: inline-block;
+   background-color: rgb(35, 105, 255);
+   color: white;
+   padding: 4px 10px;
+   border-radius: 4px; 
+ }
+
+a:not(.nav-link){
+  color: rgb(35, 105, 255);
+}
+a:not(.nav-link):visited{
+  color: rgb(171, 28, 253);
+}
+hr{
+  width: 72%;
+  margin-left: 30px;
+  border-radius: 30%;
+  margin-top: 15;
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 40px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+  </style>
+
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>CSS Documentation</header>
+    <hr>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+      <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+      <li><a class="nav-link" href="#Starting_With_Some_HTML">Starting With Some HTML</a></li>
+      <li><a class="nav-link" href="#Adding_CSS_to_our_document">Adding CSS to our document</a></li>
+      <li><a class="nav-link" href="#Styling_HTML_elements">Styling HTML elements</a></li>
+      <li><a class="nav-link" href="#Changing_The_default_behaviour_of_elements">Changing The default behaviour of elements </a></li>
+      <li><a class="nav-link" href="#Adding_a_Class">Adding a Class</a></li>
+      <li><a class="nav-link" href="#Styling_based_on_location">Styling based on location</a></li>
+      <li><a class="nav-link" href="#Styling_based_on_state">Styling based on state</a></li>
+      <li><a class="nav-link" href="#Combining_selectors_and_combinators">Combining selectors and combinators</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Cascading Stylesheets or CSS is the first technology you should start learning after HTML. While HTML is used
+          to define the structure and semantics of your content, CSS is used to style it and lay it out. For example,
+          you can use CSS to alter the font, color, size, and spacing of your content, split it into multiple columns,
+          or add animations and other decorative features.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Prerequisites">
+      <header>Prerequisites</header>
+      <article>
+        <ul>
+          <li>You should learn the basics of HTML before attempting any CSS. We recommend that you work through our <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Introduction to HTML
+              module from mdn</a> first.</li>
+          <li>Once you understand the fundamentals of HTML, we recommend that you learn further HTML and CSS at the same
+            time, moving back and forth between the two topics. This is because HTML is far more interesting and much
+            more fun to learn when you apply CSS, and you can't learn CSS without knowing HTML.</li>
+          <li>Before starting this topic, you should also be familiar with using computers and using the web passively
+            (i.e., just looking at it, consuming the content). You should have a basic work environment set up.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="CSS_Syntax">
+      <header>CSS Syntax</header>
+      <article>
+        <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to
+          particular elements or groups of elements on your web page.</p>
+        <p>For example, you can decide to have the main heading on your page to be shown as large red text. The
+          following code shows a very simple CSS rule that would achieve the styling described above:</p>
+        <code>h1 {</br>
+    color: red;</br>
+    font-size: 5em;</br>
+}</code>
+        <ul>
+
+          <li>In the above example, the CSS rule opens with a selector . This selects the HTML element that we are going
+            to style. In this case, we are styling level one headings (h1).</li>
+
+          <li>We then have a set of curly braces <code>{ }</code>.</li>
+
+          <li>Inside the braces will be one or more declarations, which take the form of property and value pairs. We
+            specify the property (color in the above example) before the colon, and we specify the value of the property
+            after the colon (red in this example).</li>
+
+          <li>This example contains two declarations, one for color and the other for font-size. Each pair specifies a
+            property of the element(s) we are selecting (h1 in this case), then a value that we'd like to give the
+            property.</li>
+
+        </ul>
+
+        <p>CSS properties have different allowable values, depending on which property is being specified. In our
+          example, we have the color property, which can take various color values. We also have the font-size property.
+          This property can take various size units as a value.</p>
+
+        <p>A CSS stylesheet will contain many such rules, written one after the other.</p>
+        <code>h1 {</br>
+    color: red;</br>
+    font-size: 5em;</br>
+}</br>
+</br>
+p {</br>
+    color: black;</br>
+}
+</code></br>
+        </br>
+      </article>
+    </section>
+
+    <section class="main-section" id="Starting_With_Some_HTML">
+      <header>Starting With Some HTML</header>
+      <article>
+        <p>Our starting point is an HTML document. You can copy the code from below if you want to work on your own
+          computer. Save the code below as index.html in a folder on your machine.</p>
+        <code> <span><</span>!doctype html></br>
+<span><</span>html lang="en"></br>
+<span><</span>head></br>
+    <span><</span>meta charset="utf-8"></br>
+    <span><</span>title>Getting started with CSS<span><</span>/title></br>
+<span><</span>/head></br>
+</br>
+<span><</span>body></br>
+</br>
+    <span><</span>h1>I am a level one heading<span><</span>/h1></br>
+</br>
+    <span><</span>p>This is a paragraph of text. In the text is a <span><</span>span>span element<span><</span>/span></br>
+and also a <span><</span>a href="https://example.com">link</a>.<span><</span>/p></br>
+
+    <span><</span>p>This is the second paragraph. It contains an <span><</span>em>emphasized<span><</span>/em> element.<span><</span>/p></br>
+
+    <span><</span>ul></br>
+        <span><</span>li>Item <span><</span>span>one<span><</span>/span><span><</span>/li></br>
+        <span><</span>li>Item two<span><</span>/li></br>
+        <span><</span>li>Item <span><</span>em>three<span><</span>/em><span><</span>/li></br>
+    <span><</span>/ul></br>
+</br>
+<span><</span>/body></br>
+</br>
+<span><</span>/html></br>
+</code></br>
+      </article>
+    </section>
+</br>
+    <section class="main-section" id="Adding_CSS_to_our_document">
+      <header>Adding CSS to our document</header>
+      <article>
+        <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to
+          use. There are three different ways to apply CSS to an HTML document that you'll commonly come across,
+          however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of
+          your document.</p>
+        <p>Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows
+          that this is a CSS file.</p>
+        <p>To link styles.css to index.html, add the following line somewhere inside the <code>"head"</code> of the HTML
+          document:</p>
+        <code>
+            <span><</span>link rel="stylesheet" href="styles.css">
+          </code>
+        <p>
+          This
+          <link> element tells the browser that we have a stylesheet, using the rel attribute, and the location of that
+          stylesheet as the value of the href attribute. You can test that the CSS works by adding a rule to styles.css.
+          Using your code editor, add the following to your CSS file:
+        </p>
+        <code>
+              h1 {</br>
+  color: red;</br>
+}</br>
+            </code>
+        <p>Save your HTML and CSS files and reload the page in a web browser. The level one heading at the top of the
+          document should now be red. If that happens, congratulations — you have successfully applied some CSS to an
+          HTML document. If that doesn't happen, carefully check that you've typed everything correctly.</p>
+        <p>You can continue to work in <code>styles.css</code> locally, or you can use our interactive editor below to
+          continue with this tutorial. The interactive editor acts as if the CSS in the first panel is linked to the
+          HTML document, just as we have with our document above.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Styling_HTML_elements">
+      <header>Styling HTML elements</header>
+      <article>
+        <p>By making our heading red, we have already demonstrated that we can target and style an HTML element. We do
+          this by targeting an element selector — this is a selector that directly matches an HTML element name. To
+          target all paragraphs in the document, you would use the selector <code>p</code>. To turn all paragraphs
+          green, you would use:</p>
+        <code>p {</br>
+  color: green;</br>
+}</code>
+        <p>You can target multiple selectors at the same time by separating the selectors with a comma. If you want all
+          paragraphs and all list items to be green, your rule would look like this:</p>
+        <code>p, li {</br>
+    color: green;</br>
+}</code>
+      </article>
+    </section>
+    </br>
+    <section class="main-section" id="Changing_The_default_behaviour_of_elements">
+      <header>Changing The default behaviour of elements</header>
+      <article>
+        <p>When we look at a well-marked up HTML document, even something as simple as our example, we can see how the
+          browser is making the HTML readable by adding some default styling. Headings are large and bold and our list
+          has bullets. This happens because browsers have internal stylesheets containing default styles, which they
+          apply to all pages by default; without them all of the text would run together in a clump and we would have to
+          style everything from scratch. All modern browsers display HTML content by default in pretty much the same
+          way.</p>
+        <p>However, you will often want something other than the choice the browser has made. This can be done by
+          choosing the HTML element that you want to change and using a CSS rule to change the way it looks. A good
+          example is
+        <ul>, an unordered list. It has list bullets. If you don't want those bullets, you can remove them like so:</p>
+          <code>li {</br>
+  list-style-type: none;</br>
+}</br>
+</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Adding_a_Class">
+      <header>Adding a Class</header>
+      <article>
+        <p>In your HTML document, add a class attribute to the second list item. Your list will now look like this:</p>
+        <code>
+            <span><</span>ul></br>
+  <span><</span>li>Item one<span><</span>/li></br>
+  <span><</span>li class="special">Item two<span><</span>/li></br>
+  <span><</span>li>Item <span><</span>em>three<span><</span>/em><span><</span>/li></br>
+<span><</span>/ul></br>
+</code>
+        <ul>
+          <li>
+            <p>In your CSS, you can target the class of special by creating a selector that starts with a full stop
+              character. Add the following to your CSS file:</p>
+            <code>.special {</br>
+  color: orange;</br>
+  font-weight: bold;</br>
+}
+</code>
+          </li>
+          <li>
+            <p>Sometimes you will see rules with a selector that lists the HTML element selector along with the class:
+            </p>
+            <code>li.special {</br>
+  color: orange;</br>
+  font-weight: bold;</br>
+}</br>
+</code>
+</li>
+<li>
+  <p>This syntax means "target any li element that has a class of special". If you were to do this, then you would no longer be able to apply the class to a <code>(span)</code>
+            or another element by adding the class to it; you would have to add that element to the list of selectors:
+            </p>
+            <code>li.special,</br>
+span.special {</br>
+  color: orange;</br>
+  font-weight: bold;</br>
+}
+</code>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Styling_based_on_location">
+      <header>Styling based on location</header>
+      <article>
+        <p>There are times when you will want something to look different based on where it is in the document. There
+          are a number of selectors that can help you here, but for now we will look at just a couple:</p>
+        <ul>
+          <li>
+            <p>This selector will select any <code>em</code> element that is inside (a descendant of) an
+              <code>li</code>So in your example document, you should find that the <code>em</code> in the third list
+              item is now purple, but the one inside the paragraph is unchanged.</p>
+            <code>li em {</br>
+  color: rebeccapurple;</br>
+}
+</code>
+          </li>
+
+          <li>
+            <p>Something else you might like to try is styling a paragraph when it comes directly after a heading at the
+              same hierarchy level in the HTML. To do so, place a <code>+</code> (an adjacent sibling combinator)
+              between the selectors.</p>
+            <code>h1 + p {</br>
+  font-size: 200%;</br>
+}</code>
+          </li>
+
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Styling_based_on_state">
+      <header>Styling based on state</header>
+      <article>
+        <p>The final type of styling we shall take a look at in this tutorial is the ability to style things based on
+          their state.</p>
+        <ul>
+          <li>
+            <p>You can use CSS to target these different states — the CSS below styles unvisited links pink and visited
+              links green.</p>
+            <code>a:link {</br>
+  color: pink;</br>
+}</br>
+</br>
+a:visited {</br>
+  color: green;</br>
+}</code>
+          </li>
+          <li>
+            <p>You can change the way the link looks when the user hovers over it, for example by removing the
+              underline, which is achieved by the next rule:</p>
+            <code>a:hover {</br>
+  text-decoration: none;</br>
+}</code>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Combining_selectors_and_combinators">
+      <header>Combining selectors and combinators</header>
+      <article>
+        <p>It is worth noting that you can combine multiple selectors and combinators together.</p>
+        <ul>
+          <li>
+            <p>For example:</p>
+            <code>/* selects any <code>span</code> that is inside a <code>p</code>, which is inside an
+            <code>article</code> */</br>
+            </br>
+            article p span { }</br>
+            </br>
+            /* selects any <code>p</code> that comes directly after a <code>ul</code>, which comes directly after an
+            <code>h1</code> */</br>
+            </br>
+            h1 + ul + p { }</code>
+          </li>
+          <li>
+            <p>You can combine multiple types together, too. Try adding the following into your code:</p>
+            <code>body h1 + p .special {</br>
+  color: yellow;</br>
+  background-color: black;</br>
+  padding: 5px;</br>
+}</code>
+            <p>This will style any element with a class of special, which is inside a <code>p</code>, which comes just
+              after an <code>h1</code>, which is inside a <code>body</code>. Phew!</p>
+            <p>In the original HTML we provided, the only element styled is
+              <code><span><</span>span class="special"></code>.</p>
+            <p>Don't worry if this seems complicated at the moment — you'll soon start to get the hang of it as you
+              write more CSS.</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started">MDN</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+{"name":"Local: NumWithDiff1","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\NumWithDiff1.cpp","tests":[{"id":1647098291265,"input":"1\n20","output":"10 12"},{"id":1647099813172,"input":"1\n9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\NumWithDiff1.cpp","group":"local","local":true}

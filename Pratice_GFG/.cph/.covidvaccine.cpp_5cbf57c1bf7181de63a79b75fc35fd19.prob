@@ -1,0 +1,1 @@
+{"name":"Local: covidvaccine","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\covidvaccine.cpp","tests":[{"id":1645250318021,"input":"1\n1 2 3 N N N 4 N 5 N 6","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\covidvaccine.cpp","group":"local","local":true}

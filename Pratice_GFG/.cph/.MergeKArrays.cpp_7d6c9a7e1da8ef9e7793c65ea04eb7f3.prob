@@ -1,0 +1,1 @@
+{"name":"Local: MergeKArrays","url":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\MergeKArrays.cpp","tests":[{"id":1645268621337,"input":"1\n3\n1 2 3\n4 5 6\n7 8 9","output":"1 2 3 4 5 6 7 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\hp\\Desktop\\Gurjot\\Hello\\MergeKArrays.cpp","group":"local","local":true}
